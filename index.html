@@ -1,0 +1,53 @@
+<html>
+<head>
+    <title>hbd mall</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+
+        <!-- NAVIGATION BAR -->
+        <div class="container-navbar">
+            <ul class="ul-navbar">
+                <li class="li-navbar">
+                    <button onClick="playPause()">Pencet Untuk Musik</button>
+                    <audio id="ASong" src="file_example_MP3_700KB.mp3" loop></audio>
+                </li>
+            </ul>
+        </div>
+        <!-- NAVIGATION BAR SELESAI -->
+
+        <!-- CONTENT 1 -->
+        <div class="container-content">
+            <a href="https://youtu.be/FdiwZ77IqwQ" class="a-content">
+                <img src="IMG-20240403-WA0037.jpeg" class="content-1" />
+                <p>JANGAN DI PENCET</p>
+            </a>
+        </div>
+        <!-- CONTENT END -->
+
+        <!-- FOOTER -->
+        <div class="container-footer">
+            <h1 class="h1-footer">HBD mal awokawokawok</h1>
+            <h2 class="h2-footer">Semoga Panjang Umur Sehat Selalu😉</h2>
+        </div>
+        <!-- FOOTER END -->
+
+    </div>
+
+    <!-- SCRIPT -->
+    <script>
+        const aud = document.getElementById("ASong");
+        let isPlaying = false;
+
+        function playPause() {
+            if (isPlaying) {
+                aud.pause();
+            } else {
+                aud.play();
+            }
+            isPlaying = !isPlaying;
+        }
+    </script>
+</body>
+</html>
